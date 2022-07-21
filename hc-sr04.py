@@ -2,10 +2,10 @@ import RPi.GPIO as GPIO
 import time
 GPIO.setmode(GPIO.BCM)
 
-TRIG = 23
-ECHO = 24
+TRIG = 23 #Gpio 23
+ECHO = 24 #Gpio 24
 
-print "Distance Measurement In Progress"
+print("Medición de distancia en curso")
 
 GPIO.setup(TRIG,GPIO.OUT)
 GPIO.setup(ECHO,GPIO.IN)
@@ -13,7 +13,7 @@ try:
     while True:
 
         GPIO.output(TRIG, False)
-        print("Waiting For Sensor To Settle")
+        print("Eperando conexión con el sensor")
         time.sleep(2)
 
         GPIO.output(TRIG, True)
@@ -32,8 +32,8 @@ try:
 
         distance = round(distance, 2)
 
-        print("Distance:",distance,"cm")
+        print("Distancia:",distance,"cm")
 
 except KeyboardInterrupt: # If there is a KeyboardInterrupt (when you press ctrl+c), exit the program and cleanup
-    print("Cleaning up!")
+    print("Limpiando!")
     gpio.cleanup()
