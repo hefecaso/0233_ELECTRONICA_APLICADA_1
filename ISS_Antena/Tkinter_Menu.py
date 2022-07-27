@@ -7,14 +7,14 @@ from os import system
 #############################
 
 ventana = Tk()
-ventana.geometry("500x795")
+ventana.geometry("410x650")
 
 titulo = tkinter.Label(
 ventana,
 text = "ISS antenna program",
 bg = "gray",
 fg = "white",
-font=("",30)
+font=("",20)
 )
 
 #Mostrando título en la ventana, centrado y superior
@@ -82,7 +82,7 @@ text = 'Control de elevación',
 command = elevacion,
 width = 40,
 height = 4,
-font=("",11)
+font=("",9)
 )
 
 boton_azimut = Button(
@@ -91,7 +91,7 @@ text = 'Control del azimut',
 command = azimut,
 width = 40,
 height = 4,
-font=("",11)
+font=("",9)
 )
 
 boton_azimut_elevacion = Button(
@@ -100,7 +100,7 @@ text = 'Control manual de la elevación y azimut',
 command = azimut_elevacion,
 width = 40,
 height = 4,
-font=("",11)
+font=("",9)
 )
 
 boton_target_iss = Button(
@@ -109,7 +109,7 @@ text = 'Seguir trayectoria de la ISS (Auto)',
 command = target_iss,
 width = 40,
 height = 4,
-font=("",11)
+font=("",9)
 )
 
 boton_mapa = Button(
@@ -118,7 +118,7 @@ text = 'ISS Tracker',
 command = mapa,
 width = 40,
 height = 4,
-font=("",11)
+font=("",9)
 )
 
 boton_origen = Button(
@@ -127,7 +127,7 @@ text = 'Posicionar antena al Norte',
 command = origen,
 width = 40,
 height = 4,
-font=("",11)
+font=("",9)
 )
 
 boton_brujula = Button(
@@ -136,7 +136,7 @@ text = 'Ver brujula',
 command= brujula,
 width = 40,
 height = 4,
-font=("",11)
+font=("",9)
 )
 
 salir = Button(
@@ -145,7 +145,7 @@ text = 'Salir',
 command= ventana.destroy,
 width = 40,
 height = 4,
-font=("",11)
+font=("",9)
 )
 
 
