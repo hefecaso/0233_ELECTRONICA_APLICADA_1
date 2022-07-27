@@ -60,7 +60,7 @@ def origen():
 
     #print("Moviendo servo a 0°")
 
-    system(f"python3 servo_origin.py")
+    system(f"lxterminal -e python3 servo_origin.py")
 
     #print("\nRegresando a azimut 0°: \n")
 
