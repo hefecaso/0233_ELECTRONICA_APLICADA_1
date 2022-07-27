@@ -50,7 +50,7 @@ while True:
     )
     home.date = datetime.utcnow()
     iss_1.compute(home)
-    Angulo_Elevacion = int(iss_1.alt * degrees_per_radian)
+    Angulo_Elevacion = int(iss_1.alt * degrees_per_radian*(-1))
     print('Elevacion:' , Angulo_Elevacion)
     time.sleep(1)
 

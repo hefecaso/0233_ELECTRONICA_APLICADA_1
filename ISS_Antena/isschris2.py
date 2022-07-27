@@ -88,7 +88,7 @@ def tracker():
             )
             home.date = datetime.utcnow()
             iss_1.compute(home)
-            Angulo_Elevacion = '%4.1f' % (iss_1.alt * degrees_per_radian)
+            Angulo_Elevacion = '%4.1f' % (iss_1.alt * degrees_per_radian*(-1))
             Azimut =  '%5.1f' % (iss_1.az * degrees_per_radian)
             print('Elevacion:', Angulo_Elevacion ,', Azimut:', Azimut)
             time.sleep(5)
