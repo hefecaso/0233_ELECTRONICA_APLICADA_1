@@ -49,7 +49,16 @@ def pasoISS():
 
 
 def tracker():
+    print("=================================")
+    print("         Próximos pases          ")
+    print("=================================\n")
+
     pasoISS()
+
+    print("\n=====================================")
+    print("         Setting ISS target          ")
+    print("=====================================\n")
+
     while True:
 
         try:
