@@ -28,7 +28,7 @@ def vector_22_degrees(x, z):
         angle2 += 90
     return angle2
 
-def get2_heading(_sensor):
+def get_heading(_sensor):
     magnet_x, magnet_z, _ = _sensor.magnetic
     return vector_22_degrees(magnet_x, magnet_z)
 
