@@ -55,6 +55,9 @@ def mapa():
     # Para Ubuntu
     #mapa = system("gnome-terminal -- python3 isschris2.py")
 
+def brujula():
+    brujula = system("lxterminal -e python3 brujula.py")
+
 def origen():
     #print("\nRegresando a elevación 0°: \n")
 
@@ -79,7 +82,7 @@ text = 'Control de elevación',
 command = elevacion,
 width = 40,
 height = 4,
-font=("",14)
+font=("",11)
 )
 
 boton_azimut = Button(
@@ -88,7 +91,7 @@ text = 'Control del azimut',
 command = azimut,
 width = 40,
 height = 4,
-font=("",14)
+font=("",11)
 )
 
 boton_azimut_elevacion = Button(
@@ -97,7 +100,7 @@ text = 'Control manual de la elevación y azimut',
 command = azimut_elevacion,
 width = 40,
 height = 4,
-font=("",14)
+font=("",11)
 )
 
 boton_target_iss = Button(
@@ -106,7 +109,7 @@ text = 'Seguir trayectoria de la ISS (Auto)',
 command = target_iss,
 width = 40,
 height = 4,
-font=("",14)
+font=("",11)
 )
 
 boton_mapa = Button(
@@ -115,7 +118,7 @@ text = 'ISS Tracker',
 command = mapa,
 width = 40,
 height = 4,
-font=("",14)
+font=("",11)
 )
 
 boton_origen = Button(
@@ -124,7 +127,16 @@ text = 'Posicionar antena al Norte',
 command = origen,
 width = 40,
 height = 4,
-font=("",14)
+font=("",11)
+)
+
+boton_brujula = Button(
+ventana,
+text = 'Ver brujula',
+command= brujula,
+width = 40,
+height = 4,
+font=("",11)
 )
 
 salir = Button(
@@ -133,7 +145,7 @@ text = 'Salir',
 command= ventana.destroy,
 width = 40,
 height = 4,
-font=("",14)
+font=("",11)
 )
 
 
@@ -149,6 +161,7 @@ boton_azimut_elevacion.pack()
 boton_target_iss.pack()
 boton_mapa.pack()
 boton_origen.pack()
+boton_brujula.pack()
 salir.pack()
 
 

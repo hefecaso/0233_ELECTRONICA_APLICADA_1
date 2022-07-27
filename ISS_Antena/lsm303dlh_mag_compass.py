@@ -18,9 +18,13 @@ def vector_2_degrees(x, y):
     return angle
 
 
-def get_heading(_sensor):
+'''def get_heading(_sensor):
     magnet_x, magnet_y, _ = _sensor.magnetic
-    return vector_2_degrees(magnet_x, magnet_y)
+    return vector_2_degrees(magnet_x, magnet_y)'''
+
+def get_heading(_sensor):
+    magnet_x, magnet_z, _ = _sensor.magnetic
+    return vector_22_degrees(magnet_x, magnet_z)
 
 def pos():
     posicion = get_heading(sensor)
