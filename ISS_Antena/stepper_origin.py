@@ -30,7 +30,7 @@ GPIO.setup(out3,GPIO.OUT)
 GPIO.setup(out4,GPIO.OUT)
 
 #Incerteza de +/- 30
-regreso = (360 + posicion)
+regreso = posicion
 
 try:
     while(1):
