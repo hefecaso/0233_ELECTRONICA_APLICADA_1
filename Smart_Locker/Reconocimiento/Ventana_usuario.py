@@ -75,6 +75,7 @@ font=("",20)
 
 #boton_mapa.grid(fila = 1, columna = 0)
 #boton_mapa.grid(row = 1, column = 0)
+boton_guardar_rostro.pack()
 boton_reconocimiento.pack()
 
 
