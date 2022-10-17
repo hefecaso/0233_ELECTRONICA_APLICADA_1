@@ -3,7 +3,7 @@ import os
 import imutils
 
 personName = 'Fernando'
-dataPath = 'Yo'#Cambia a la ruta donde hayas almacenado Data
+dataPath = 'Usuarios'#Cambia a la ruta donde hayas almacenado Data
 personPath = dataPath + '/' + personName
 
 if not os.path.exists(personPath):
