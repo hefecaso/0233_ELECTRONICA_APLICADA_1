@@ -27,6 +27,10 @@ titulo.pack(fill = tkinter.X)
 #   funciones    #
 ##################
 
+def guardar_rostro():
+    exec(open("capturandoRostros.py").read())
+    exec(open("entrenandoRF.py").read())
+
 def reconocimiento():
     exec(open("ReconocimientoFacial.py").read())
 
@@ -35,9 +39,18 @@ def reconocimiento():
 #   Botones #
 #############
 
+boton_guardar_rostro = Button(
+ventana,
+text = 'Capturar rostro',
+command = guardar_rostro,
+width = 50,
+height = 4,
+font=("",20)
+)
+
 boton_reconocimiento = Button(
 ventana,
-text = 'Reconocimiento facial',
+text = 'Abrir locker',
 command = reconocimiento,
 width = 50,
 height = 4,
