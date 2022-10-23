@@ -1,6 +1,7 @@
 from tkinter import *
 import tkinter
 from os import system
+from tkinter import messagebox
 
 #############################
 #   Ventanas principales    #
@@ -34,7 +35,15 @@ def guardar_rostro():
 def reconocimiento():
     exec(open("ReconocimientoFacial.py").read())
 
+#def ingresar_nickname():
+    #messagebox.showinfo("Hola!", "Hola mundo")
 
+# Campo para pedir datos
+
+# username = tkinter.Entry(ventana, width = 20)
+# username.pack()
+
+Button(username, text = "Button", )
 #############
 #   Botones #
 #############
@@ -58,6 +67,15 @@ font=("",20)
 )
 
 
+# boton_ingresar_nickname = Button(
+# ventana,
+# text = 'Boton de prueba',
+# command = ingresar_nickname,
+# width = 50,
+# height = 4,
+# font=("",20)
+# )
+
 
 salir = Button(
 ventana,
@@ -77,6 +95,7 @@ font=("",20)
 #boton_mapa.grid(row = 1, column = 0)
 boton_guardar_rostro.pack()
 boton_reconocimiento.pack()
+#boton_ingresar_nickname.pack()
 
 
 salir.pack()
