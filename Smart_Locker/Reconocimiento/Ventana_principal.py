@@ -31,7 +31,8 @@ def usuario():
     exec(open("Ventana_usuario.py").read())
     #reconocimiento = system(f"gnome-terminal -- python3 Reconocimiento/ReconocimientoFacial.py")
 
-
+def admin():
+    exec(open("Admin.py").read())
 
 #############
 #   Botones #
@@ -46,7 +47,14 @@ height = 4,
 font=("",20)
 )
 
-
+boton_admin = Button(
+ventana,
+text = 'Modo administrador',
+command = admin,
+width = 50,
+height = 4,
+font=("",20)
+)
 
 salir = Button(
 ventana,
@@ -65,6 +73,7 @@ font=("",20)
 #boton_mapa.grid(fila = 1, columna = 0)
 #boton_mapa.grid(row = 1, column = 0)
 boton_usuario.pack()
+boton_admin.pack()
 
 
 salir.pack()

@@ -1,6 +1,7 @@
 from tkinter import *
 import tkinter
 from os import system
+from tkinter import messagebox
 
 #############################
 #   Ventanas principales    #
@@ -27,35 +28,49 @@ titulo.pack(fill = tkinter.X)
 #   funciones    #
 ##################
 
-def registrar():
-    exec(open("Ventana_nuevo_usuario.py").read())
+def guardar_rostro():
+    #exec(open("capturandoRostros.py").read())
+    system(f"gnome-terminal -- python3 capturandoRostros.py") #Ubuntu
+    #system(f"lxterminal -e python3 capturandoRostros.py")  #Raspberry
+    exec(open("entrenandoRF.py").read())
 
-def ingresar():
-    exec(open("Ventana_ingreso_usuario.py").read())
+
+#def ingresar_nickname():
+    #messagebox.showinfo("Hola!", "Hola mundo")
+
+# Campo para pedir datos
+
+#############
+
+
+# username = tkinter.Entry(ventana, width = 20)
+# username.pack()
+#Button(username, text = "Button", )
+
 
 
 #############
 #   Botones #
 #############
 
-boton_registrar = Button(
+boton_guardar_rostro = Button(
 ventana,
-text = 'Nuevo registro',
-command = registrar,
+text = 'Ingresar nuevo registro biométrico',
+command = guardar_rostro,
 width = 50,
 height = 4,
 font=("",20)
 )
 
-boton_ingresar = Button(
-ventana,
-text = 'Ingresar con usuario existente',
-command = ingresar,
-width = 50,
-height = 4,
-font=("",20)
-)
 
+# boton_ingresar_nickname = Button(
+# ventana,
+# text = 'Boton de prueba',
+# command = ingresar_nickname,
+# width = 50,
+# height = 4,
+# font=("",20)
+# )
 
 
 salir = Button(
@@ -74,8 +89,9 @@ font=("",20)
 
 #boton_mapa.grid(fila = 1, columna = 0)
 #boton_mapa.grid(row = 1, column = 0)
-boton_registrar.pack()
-boton_ingresar.pack()
+boton_guardar_rostro.pack()
+
+#boton_ingresar_nickname.pack()
 
 
 salir.pack()

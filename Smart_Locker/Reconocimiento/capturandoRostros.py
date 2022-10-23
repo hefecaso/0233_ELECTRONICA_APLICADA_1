@@ -2,7 +2,13 @@ import cv2
 import os
 import imutils
 
-personName = 'Fernando'
+#########################################
+#   Pidiendo nombre para el Usuarios    #
+#########################################
+
+username = input("Ingrese su nombre de usuario: ")
+
+personName = username
 dataPath = 'Usuarios'#Cambia a la ruta donde hayas almacenado Data
 personPath = dataPath + '/' + personName
 
@@ -33,7 +39,7 @@ while True:
     cv2.imshow('frame',frame)
 
     k =  cv2.waitKey(1)
-    if k == 27 or count >= 300:
+    if k == 27 or count >= 50:
         break
 
 cap.release()

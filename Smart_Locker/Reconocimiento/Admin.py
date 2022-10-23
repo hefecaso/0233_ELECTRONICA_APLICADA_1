@@ -16,7 +16,7 @@ ventana,
 text = "Smart Locker",
 bg = "gray",
 fg = "white",
-font=("",20)
+font=("",30)
 )
 
 #Mostrando título en la ventana, centrado y superior
@@ -27,36 +27,34 @@ titulo.pack(fill = tkinter.X)
 #   funciones    #
 ##################
 
-def registrar():
-    exec(open("Ventana_nuevo_usuario.py").read())
+def carpetas():
+    system(f"gnome-terminal -- xdg-open Usuarios/")
 
-def ingresar():
-    exec(open("Ventana_ingreso_usuario.py").read())
-
+def refresh():
+    system(f"gnome-terminal -- python3 entrenandoRF.py")
+    #exec(open("entrenandoRF.py").read())
 
 #############
 #   Botones #
 #############
 
-boton_registrar = Button(
+boton_carpetas = Button(
 ventana,
-text = 'Nuevo registro',
-command = registrar,
+text = 'Ver archivos de los usuarios',
+command = carpetas,
 width = 50,
 height = 4,
 font=("",20)
 )
 
-boton_ingresar = Button(
+boton_refresh = Button(
 ventana,
-text = 'Ingresar con usuario existente',
-command = ingresar,
+text = 'Refrescar y entrenar IA',
+command = refresh,
 width = 50,
 height = 4,
 font=("",20)
 )
-
-
 
 salir = Button(
 ventana,
@@ -74,8 +72,8 @@ font=("",20)
 
 #boton_mapa.grid(fila = 1, columna = 0)
 #boton_mapa.grid(row = 1, column = 0)
-boton_registrar.pack()
-boton_ingresar.pack()
+boton_carpetas.pack()
+boton_refresh.pack()
 
 
 salir.pack()

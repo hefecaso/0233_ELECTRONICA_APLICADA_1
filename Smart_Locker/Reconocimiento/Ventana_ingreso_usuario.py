@@ -28,9 +28,11 @@ titulo.pack(fill = tkinter.X)
 #   funciones    #
 ##################
 
-def guardar_rostro():
-    exec(open("capturandoRostros.py").read())
-    exec(open("entrenandoRF.py").read())
+# def guardar_rostro():
+#     #exec(open("capturandoRostros.py").read())
+#     system(f"gnome-terminal -- python3 capturandoRostros.py") #Ubuntu
+#     #system(f"lxterminal -e python3 capturandoRostros.py")  #Raspberry
+#     exec(open("entrenandoRF.py").read())
 
 def reconocimiento():
     exec(open("ReconocimientoFacial.py").read())
@@ -40,22 +42,27 @@ def reconocimiento():
 
 # Campo para pedir datos
 
+#############
+
+
 # username = tkinter.Entry(ventana, width = 20)
 # username.pack()
+#Button(username, text = "Button", )
 
-Button(username, text = "Button", )
+
+
 #############
 #   Botones #
 #############
 
-boton_guardar_rostro = Button(
-ventana,
-text = 'Capturar rostro',
-command = guardar_rostro,
-width = 50,
-height = 4,
-font=("",20)
-)
+# boton_guardar_rostro = Button(
+# ventana,
+# text = 'Capturar rostro',
+# command = guardar_rostro,
+# width = 50,
+# height = 4,
+# font=("",20)
+# )
 
 boton_reconocimiento = Button(
 ventana,
@@ -93,7 +100,7 @@ font=("",20)
 
 #boton_mapa.grid(fila = 1, columna = 0)
 #boton_mapa.grid(row = 1, column = 0)
-boton_guardar_rostro.pack()
+#boton_guardar_rostro.pack()
 boton_reconocimiento.pack()
 #boton_ingresar_nickname.pack()
 
