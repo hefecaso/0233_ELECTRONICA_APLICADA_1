@@ -27,30 +27,31 @@ titulo.pack(fill = tkinter.X)
 #   funciones    #
 ##################
 
-def registrar():
-    exec(open("Ventana_nuevo_registro.py").read())
+def guardar_rostro():
+    exec(open("capturandoRostros.py").read())
+    exec(open("entrenandoRF.py").read())
 
-def ingresar():
-    exec(open("Ventana_ingreso_usuario.py").read())
+def reconocimiento():
+    exec(open("ReconocimientoFacial.py").read())
 
 
 #############
 #   Botones #
 #############
 
-boton_registrar = Button(
+boton_guardar_rostro = Button(
 ventana,
-text = 'Nuevo registro',
-command = registrar,
+text = 'Capturar rostro',
+command = guardar_rostro,
 width = 50,
 height = 4,
 font=("",20)
 )
 
-boton_ingresar = Button(
+boton_reconocimiento = Button(
 ventana,
-text = 'Ingresar con usuario existente',
-command = ingresar,
+text = 'Abrir locker',
+command = reconocimiento,
 width = 50,
 height = 4,
 font=("",20)
@@ -74,8 +75,8 @@ font=("",20)
 
 #boton_mapa.grid(fila = 1, columna = 0)
 #boton_mapa.grid(row = 1, column = 0)
-boton_registrar.pack()
-boton_ingresar.pack()
+boton_guardar_rostro.pack()
+boton_reconocimiento.pack()
 
 
 salir.pack()
