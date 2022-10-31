@@ -1,14 +1,26 @@
 import cv2
 import os
 import imutils
+import pandas as pd
 
 #########################################
 #   Pidiendo nombre para el Usuarios    #
 #########################################
 
-username = input("Ingrese su nombre de usuario: ")
+# username_df = input("Ingrese su nombre de usuario: ")
+# dpi_df = input("Ingrese su número de dpi: ")
+# contraseña_df = input("Ingrese una contraseña: ")
+# locker_df = input("Ingrese número de locker: ")
+#
+# username = [username_df]
+# dpi = [dpi_df]
+# contraseña = [contraseña_df]
+# locker = [locker_df]
+#
+# pd.DataFrame.to_csv(f'Usuarios/{username}/{username}.csv')
 
-personName = username
+#########################################
+personName = username_df
 dataPath = 'Usuarios'#Cambia a la ruta donde hayas almacenado Data
 personPath = dataPath + '/' + personName
 
