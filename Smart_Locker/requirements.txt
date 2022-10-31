@@ -7,3 +7,5 @@ tensorflow-io-gcs-filesystem==0.27.0
 tk==0.1.0
 mtcnn==0.1.1
 matplotlib==3.5.1
+pandas==1.5.1
+numpy==1.21.5
