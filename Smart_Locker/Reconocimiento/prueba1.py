@@ -10,5 +10,5 @@ Dpi = int(input("Digite su numero de identificacion personal "))
 
 #savetxt("Nombre.csv", array([Nombre,Contraseña,Locker,Dpi]).T , delimiter=",", header='Nombre,Contraseña,Locker,Dpi')
 
-df = pd.DataFrame([[Nombre,Locker,Dpi]], columns = ['Nombre', 'Locker', 'Dpi'])
+df = pd.DataFrame([[Nombre,Contraseña,Locker,Dpi]], columns = ['Nombre', 'Contraseña','Locker', 'Dpi'])
 df.to_csv(Nombre)
