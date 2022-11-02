@@ -6,21 +6,24 @@ import pandas as pd
 #########################################
 #   Pidiendo nombre para el Usuarios    #
 #########################################
+import getpass
+from numpy import *
+import matplotlib.pyplot as plt
+import pandas as pd
 
-# username_df = input("Ingrese su nombre de usuario: ")
-# dpi_df = input("Ingrese su número de dpi: ")
-# contraseña_df = input("Ingrese una contraseña: ")
-# locker_df = input("Ingrese número de locker: ")
-#
-# username = [username_df]
-# dpi = [dpi_df]
-# contraseña = [contraseña_df]
-# locker = [locker_df]
-#
-# pd.DataFrame.to_csv(f'Usuarios/{username}/{username}.csv')
+Username = input("Escriba su nombre de usuario: ")
+Contraseña = getpass.getpass("Ingrese su contraseña: ")
+Locker = int(input("Digite el numero de locker que desea: "))
+Dpi = int(input("Digite su numero de identificacion personal: "))
+print('Capturando rostro, espere un momento...')
+
+#savetxt("Nombre.csv", array([Nombre,Contraseña,Locker,Dpi]).T , delimiter=",", header='Nombre,Contraseña,Locker,Dpi')
+
+df = pd.DataFrame([[Username,Contraseña,Locker,Dpi]], columns = ['Nombre', 'Contraseña','Locker', 'Dpi'])
+df.to_csv(f'Usuarios/{Username}/{Username}.csv')
 
 #########################################
-personName = username_df
+personName = Username
 dataPath = 'Usuarios'#Cambia a la ruta donde hayas almacenado Data
 personPath = dataPath + '/' + personName
 
