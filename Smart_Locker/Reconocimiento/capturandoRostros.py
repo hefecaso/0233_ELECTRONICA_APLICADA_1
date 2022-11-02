@@ -1,11 +1,11 @@
 import cv2
 import os
 import imutils
-import pandas as pd
-
+import time
 #########################################
 #   Pidiendo nombre para el Usuarios    #
 #########################################
+
 import getpass
 from numpy import *
 import matplotlib.pyplot as plt
@@ -15,12 +15,11 @@ Username = input("Escriba su nombre de usuario: ")
 Contraseña = getpass.getpass("Ingrese su contraseña: ")
 Locker = int(input("Digite el numero de locker que desea: "))
 Dpi = int(input("Digite su numero de identificacion personal: "))
-print('Capturando rostro, espere un momento...')
-
+print("Capturando rostro, espere un momento...")
+time.sleep(2)
 #savetxt("Nombre.csv", array([Nombre,Contraseña,Locker,Dpi]).T , delimiter=",", header='Nombre,Contraseña,Locker,Dpi')
 
-df = pd.DataFrame([[Username,Contraseña,Locker,Dpi]], columns = ['Nombre', 'Contraseña','Locker', 'Dpi'])
-df.to_csv(f'Usuarios/{Username}/{Username}.csv')
+
 
 #########################################
 personName = Username
@@ -59,3 +58,13 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
+################################################
+
+print("Rostro capturado.")
+time.sleep(2)
+print(f"Bienvenido {Username}!")
+time.sleep(2)
+
+df = pd.DataFrame([[Username,Contraseña,Locker,Dpi]], columns = ['Username', 'Contraseña','Locker', 'Dpi'])
+df.to_csv(f'Usuarios/{Username}/{Username}.csv')
