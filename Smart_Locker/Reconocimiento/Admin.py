@@ -34,6 +34,9 @@ def refresh():
     system(f"gnome-terminal -- python3 entrenandoRF.py")
     #exec(open("entrenandoRF.py").read())
 
+def agregar_quitar_admin():
+    system(f"gnome-terminal -- vim Administrator/Administrator.csv")
+
 #############
 #   Botones #
 #############
@@ -51,6 +54,15 @@ boton_refresh = Button(
 ventana,
 text = 'Refrescar y entrenar IA',
 command = refresh,
+width = 50,
+height = 4,
+font=("",20)
+)
+
+boton_agregar_quitar_admin = Button(
+ventana,
+text = 'Agregar/quitar administrador',
+command = agregar_quitar_admin,
 width = 50,
 height = 4,
 font=("",20)
@@ -74,6 +86,7 @@ font=("",20)
 #boton_mapa.grid(row = 1, column = 0)
 boton_carpetas.pack()
 boton_refresh.pack()
+boton_agregar_quitar_admin.pack()
 
 
 salir.pack()
