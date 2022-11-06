@@ -14,7 +14,7 @@ def main():
 	deleted_files_count = 0
 
 	# specify the path
-	path = "Datos_usuarios/"
+	path = ".Datos_usuarios/"
 
 	# specify the days
 	days = 30
