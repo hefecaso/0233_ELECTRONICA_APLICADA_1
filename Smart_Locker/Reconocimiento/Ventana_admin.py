@@ -37,6 +37,10 @@ def refresh():
 def agregar_quitar_admin():
     system(f"gnome-terminal -- vim Administrator/Administrator.csv")
 
+def limpiar():
+    system(f"gnome-terminal -- python3 Eliminar_archivos_antiguos.py")
+    system(f"gnome-terminal -- python3 Eliminar_carpetas_antiguas.py")
+
 #############
 #   Botones #
 #############
@@ -68,6 +72,15 @@ height = 4,
 font=("",20)
 )
 
+boton_limpiar = Button(
+ventana,
+text = 'Eliminar archivos con más de un mes',
+command = limpiar,
+width = 50,
+height = 4,
+font=("",20)
+)
+
 salir = Button(
 ventana,
 text = 'Salir',
@@ -87,7 +100,7 @@ font=("",20)
 boton_carpetas.pack()
 boton_refresh.pack()
 boton_agregar_quitar_admin.pack()
-
+boton_limpiar.pack()
 
 salir.pack()
 

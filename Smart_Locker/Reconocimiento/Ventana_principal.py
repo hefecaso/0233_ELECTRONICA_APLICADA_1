@@ -32,7 +32,7 @@ def usuario():
     #reconocimiento = system(f"gnome-terminal -- python3 Reconocimiento/ReconocimientoFacial.py")
 
 def admin():
-    exec(open("Admin.py").read())
+    exec(open("Ventana_admin.py").read())
 
 #############
 #   Botones #
