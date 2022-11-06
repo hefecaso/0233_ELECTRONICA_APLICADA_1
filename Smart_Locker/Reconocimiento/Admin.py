@@ -28,7 +28,7 @@ titulo.pack(fill = tkinter.X)
 ##################
 
 def carpetas():
-    system(f"gnome-terminal -- xdg-open Usuarios/")
+    system(f"gnome-terminal -- xdg-open Datos_usuarios/")
 
 def refresh():
     system(f"gnome-terminal -- python3 entrenandoRF.py")

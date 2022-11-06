@@ -1,6 +1,7 @@
 import cv2
 import os
 import numpy as np
+import time
 
 dataPath = 'Usuarios' #Cambia a la ruta donde hayas almacenado Data
 peopleList = os.listdir(dataPath)
@@ -30,8 +31,9 @@ face_recognizer = cv2.face.LBPHFaceRecognizer_create()
 # Entrenando el reconocedor de rostros
 print("Entrenando...")
 face_recognizer.train(facesData, np.array(labels))
-
+time.sleep(2)
 # Almacenando el modelo obtenido
 
 face_recognizer.write('modeloLBPHFace.xml')
 print("Modelo almacenado...")
+time.sleep(2)
