@@ -27,8 +27,8 @@ titulo.pack(fill = tkinter.X)
 #   funciones    #
 ##################
 
-def carpetas():
-    system(f"gnome-terminal -- xdg-open .Datos_usuarios/")
+def datos_usuarios():
+    system(f"gnome-terminal -- python3 Ver_usuarios_mod_admin.py")
 
 def refresh():
     system(f"gnome-terminal -- python3 entrenandoRF.py")
@@ -45,10 +45,10 @@ def limpiar():
 #   Botones #
 #############
 
-boton_carpetas = Button(
+boton_datos_usuarios = Button(
 ventana,
 text = 'Ver archivos de los usuarios',
-command = carpetas,
+command = datos_usuarios,
 width = 50,
 height = 4,
 font=("",20)
@@ -97,7 +97,7 @@ font=("",20)
 
 #boton_mapa.grid(fila = 1, columna = 0)
 #boton_mapa.grid(row = 1, column = 0)
-boton_carpetas.pack()
+boton_datos_usuarios.pack()
 boton_refresh.pack()
 boton_agregar_quitar_admin.pack()
 boton_limpiar.pack()

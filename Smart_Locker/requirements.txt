@@ -9,3 +9,4 @@ mtcnn==0.1.1
 matplotlib==3.5.1
 pandas==1.5.1
 numpy==1.21.5
+getch==1.0
