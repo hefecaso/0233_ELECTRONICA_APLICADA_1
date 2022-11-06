@@ -28,14 +28,14 @@ titulo.pack(fill = tkinter.X)
 ##################
 
 def carpetas():
-    system(f"gnome-terminal -- xdg-open Datos_usuarios/")
+    system(f"gnome-terminal -- xdg-open .Datos_usuarios/")
 
 def refresh():
     system(f"gnome-terminal -- python3 entrenandoRF.py")
     #exec(open("entrenandoRF.py").read())
 
 def agregar_quitar_admin():
-    system(f"gnome-terminal -- vim Administrator/Administrator.csv")
+    system(f"gnome-terminal -- vim .Administrator/Administrator.csv")
 
 def limpiar():
     system(f"gnome-terminal -- python3 Eliminar_archivos_antiguos.py")

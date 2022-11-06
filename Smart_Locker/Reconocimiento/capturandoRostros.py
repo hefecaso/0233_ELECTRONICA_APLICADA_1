@@ -67,4 +67,4 @@ print(f"Bienvenido {Username}!")
 time.sleep(2)
 
 df = pd.DataFrame([[Username,Contraseña,Locker,Dpi]], columns = ['Username', 'Contraseña','Locker', 'Dpi'])
-df.to_csv(f'Datos_usuarios/{Username}.csv')
+df.to_csv(f'.Datos_usuarios/{Username}.csv')
