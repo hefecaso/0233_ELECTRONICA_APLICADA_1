@@ -26,7 +26,7 @@ for nameDir in peopleList:
 
 # Métodos para entrenar el reconocedor
 
-face_recognizer = cv2.face.BPHFaceRecognizer_create()
+face_recognizer = cv2.face.LBPHFaceRecognizer_create()
 
 # Entrenando el reconocedor de rostros
 print("Entrenando...")
