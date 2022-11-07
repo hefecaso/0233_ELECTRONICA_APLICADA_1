@@ -4,7 +4,8 @@ import pandas as pd
 import csv
 
 Casillero = int(input("Escriba su Locker y si el registro biometrico es valido se aperturará "))
-df = pd.read_csv(f'.Datos_usuarios/{Username}.csv', header=0)
+#Username = input("digite su nombre para confirmar")
+#df = pd.read_csv(f'.Datos_usuarios/{Username}.csv', header=0)
 
 # print(datos)
 # print("")
