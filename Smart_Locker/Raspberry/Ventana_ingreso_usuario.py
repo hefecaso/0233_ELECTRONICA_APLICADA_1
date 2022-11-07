@@ -36,6 +36,7 @@ titulo.pack(fill = tkinter.X)
 
 def reconocimiento():
     exec(open("ReconocimientoFacial.py").read())
+    exec(open("Led-buscar_locker.py").read())
 
 #def ingresar_nickname():
     #messagebox.showinfo("Hola!", "Hola mundo")

@@ -6,11 +6,11 @@ Username = input("Escriba su nombre de usuario: ")
 df = pd.read_csv(f'.Datos_usuarios/{Username}.csv', header=0)
 # print(datos)
 # print("")
-Locker = df['Locker']
+Locker = (df['Locker'] + 1)
 
 ESPERA = 0.5
 PIN = Locker
-GPIO.setmode(GPIO.BOARD)
+GPIO.setmode(GPIO.BCM)
 GPIO.setup(PIN, GPIO.OUT)
 while True:
     GPIO.output(PIN, GPIO.HIGH)
