@@ -31,7 +31,7 @@ def registrar():
     exec(open("Ventana_nuevo_usuario.py").read())
 
 def ingresar():
-    exec(open("Ventana_ingreso_usuario.py").read())
+    system(f"gnome-terminal -- python3 Validación_usuario.py")
 
 
 #############
