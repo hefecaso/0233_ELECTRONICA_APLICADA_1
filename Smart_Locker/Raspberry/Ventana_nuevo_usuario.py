@@ -17,7 +17,7 @@ ventana,
 text = "Smart Locker",
 bg = "gray",
 fg = "white",
-font=("",20)
+font=("",10)
 )
 
 #Mostrando título en la ventana, centrado y superior
@@ -57,9 +57,9 @@ boton_guardar_rostro = Button(
 ventana,
 text = 'Ingresar nuevo registro biométrico',
 command = guardar_rostro,
-width = 50,
+width = 30,
 height = 4,
-font=("",20)
+font=("",10)
 )
 
 
@@ -67,9 +67,9 @@ font=("",20)
 # ventana,
 # text = 'Boton de prueba',
 # command = ingresar_nickname,
-# width = 50,
+# width = 30,
 # height = 4,
-# font=("",20)
+# font=("",10)
 # )
 
 
@@ -77,9 +77,9 @@ salir = Button(
 ventana,
 text = 'Salir',
 command= ventana.destroy,
-width = 50,
+width = 30,
 height = 4,
-font=("",20)
+font=("",10)
 )
 
 

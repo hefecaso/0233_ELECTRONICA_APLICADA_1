@@ -43,27 +43,27 @@ boton_usuario = Button(
 ventana,
 text = 'Usuario',
 command = usuario,
-width = 50,
+width = 30,
 height = 4,
-font=("",20)
+font=("",10)
 )
 
 boton_admin = Button(
 ventana,
 text = 'Modo administrador',
 command = admin,
-width = 50,
+width = 30,
 height = 4,
-font=("",20)
+font=("",10)
 )
 
 salir = Button(
 ventana,
 text = 'Salir',
 command= ventana.destroy,
-width = 50,
+width = 30,
 height = 4,
-font=("",20)
+font=("",10)
 )
 
 

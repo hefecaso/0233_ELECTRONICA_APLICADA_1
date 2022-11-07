@@ -16,7 +16,7 @@ ventana,
 text = "Smart Locker",
 bg = "gray",
 fg = "white",
-font=("",20)
+font=("",10)
 )
 
 #Mostrando título en la ventana, centrado y superior
@@ -42,18 +42,18 @@ boton_registrar = Button(
 ventana,
 text = 'Nuevo registro',
 command = registrar,
-width = 50,
+width = 30,
 height = 4,
-font=("",20)
+font=("",10)
 )
 
 boton_ingresar = Button(
 ventana,
 text = 'Ingresar con usuario existente',
 command = ingresar,
-width = 50,
+width = 30,
 height = 4,
-font=("",20)
+font=("",10)
 )
 
 
@@ -62,9 +62,9 @@ salir = Button(
 ventana,
 text = 'Salir',
 command= ventana.destroy,
-width = 50,
+width = 30,
 height = 4,
-font=("",20)
+font=("",10)
 )
 
 

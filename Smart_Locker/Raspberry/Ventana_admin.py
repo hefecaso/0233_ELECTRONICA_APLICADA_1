@@ -49,45 +49,45 @@ boton_datos_usuarios = Button(
 ventana,
 text = 'Ver archivos de los usuarios',
 command = datos_usuarios,
-width = 50,
+width = 30,
 height = 4,
-font=("",20)
+font=("",10)
 )
 
 boton_refresh = Button(
 ventana,
 text = 'Refrescar y entrenar IA',
 command = refresh,
-width = 50,
+width = 30,
 height = 4,
-font=("",20)
+font=("",10)
 )
 
 boton_agregar_quitar_admin = Button(
 ventana,
 text = 'Agregar/quitar administrador',
 command = agregar_quitar_admin,
-width = 50,
+width = 30,
 height = 4,
-font=("",20)
+font=("",10)
 )
 
 boton_limpiar = Button(
 ventana,
 text = 'Eliminar archivos con más de un mes',
 command = limpiar,
-width = 50,
+width = 30,
 height = 4,
-font=("",20)
+font=("",10)
 )
 
 salir = Button(
 ventana,
 text = 'Salir',
 command= ventana.destroy,
-width = 50,
+width = 30,
 height = 4,
-font=("",20)
+font=("",10)
 )
 
 

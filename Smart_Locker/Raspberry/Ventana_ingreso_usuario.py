@@ -17,7 +17,7 @@ ventana,
 text = "Smart Locker",
 bg = "gray",
 fg = "white",
-font=("",20)
+font=("",10)
 )
 
 #Mostrando título en la ventana, centrado y superior
@@ -59,18 +59,18 @@ def reconocimiento():
 # ventana,
 # text = 'Capturar rostro',
 # command = guardar_rostro,
-# width = 50,
+# width = 30,
 # height = 4,
-# font=("",20)
+# font=("",10)
 # )
 
 boton_reconocimiento = Button(
 ventana,
 text = 'Abrir locker',
 command = reconocimiento,
-width = 50,
+width = 30,
 height = 4,
-font=("",20)
+font=("",10)
 )
 
 
@@ -78,9 +78,9 @@ font=("",20)
 # ventana,
 # text = 'Boton de prueba',
 # command = ingresar_nickname,
-# width = 50,
+# width = 30,
 # height = 4,
-# font=("",20)
+# font=("",10)
 # )
 
 
@@ -88,9 +88,9 @@ salir = Button(
 ventana,
 text = 'Salir',
 command= ventana.destroy,
-width = 50,
+width = 30,
 height = 4,
-font=("",20)
+font=("",10)
 )
 
 
