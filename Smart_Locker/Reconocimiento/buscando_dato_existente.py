@@ -8,5 +8,6 @@ Contraseña = getpass.getpass("Ingrese su contraseña: ")
 df = pd.read_csv(f'.Datos_usuarios/{Username}.csv', header=0)
 
 busqueda = df.isin([Username, Contraseña]).any()
+busqueda2 = df.isin([Locker]).any()
 
 print(busqueda)
