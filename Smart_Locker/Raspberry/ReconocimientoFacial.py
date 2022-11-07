@@ -4,7 +4,7 @@ import os
 dataPath = 'Usuarios' #Cambia a la ruta donde hayas almacenado Data
 imagePaths = os.listdir(dataPath)
 print('imagePaths=',imagePaths)
-system(f"lxterminal -e python3 Led-buscar_locker.py")
+system(f"lxterminal -e python3 Led-buscar_locker.py") #borrar en caso no funcione
 
 face_recognizer = cv2.face.LBPHFaceRecognizer_create()
 
