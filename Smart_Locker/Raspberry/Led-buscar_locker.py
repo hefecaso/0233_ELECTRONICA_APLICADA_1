@@ -6,7 +6,7 @@ Username = input("Escriba su nombre de usuario: ")
 df = pd.read_csv(f'.Datos_usuarios/{Username}.csv', header=0)
 # print(datos)
 # print("")
-Locker = (df['Locker'] + 1)
+Locker = (df['Locker'] + 3)
 
 ESPERA = 0.5
 PIN = Locker
