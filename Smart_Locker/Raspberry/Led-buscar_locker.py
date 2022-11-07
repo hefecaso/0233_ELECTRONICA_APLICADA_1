@@ -3,12 +3,12 @@ import time
 import pandas as pd
 import csv
 
-Locker = int(input("Escriba su Locker y si el registro biometrico es valido se aperturará "))
+Casillero = int(input("Escriba su Locker y si el registro biometrico es valido se aperturará "))
 df = pd.read_csv(f'.Datos_usuarios/{Username}.csv', header=0)
 
 # print(datos)
 # print("")
-Locker = ('Locker' + 3)
+Locker = (Casillero + 3)
 
 ESPERA = 0.5
 PIN = Locker
