@@ -1,12 +1,14 @@
 import RPi.GPIO as GPIO
 import time
 import pandas as pd
+import csv
 
-Username = input("Escriba su nombre de usuario: ")
+Locker = int(input("Escriba su Locker y si el registro biometrico es valido se aperturará "))
 df = pd.read_csv(f'.Datos_usuarios/{Username}.csv', header=0)
+
 # print(datos)
 # print("")
-Locker = (df['Locker'] + 3)
+Locker = ('Locker' + 3)
 
 ESPERA = 0.5
 PIN = Locker
